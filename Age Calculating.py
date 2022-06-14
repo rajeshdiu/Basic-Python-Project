@@ -29,7 +29,7 @@ Age = (Current_year - Birth_Year)
 month=Age*12+localtime.tm_mon
 begain_year=int(localtime.tm_year)-Age
 end_year=begain_year+Age
-day=
+day=0
 for y in range(begain_year,end_year):
     if(isLeapYears(y)):
         day=day+366
